@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Diabetes Detection</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<div class="container">
+    <h1>Diabetes Detection System</h1>
+
+    <form action="/predict" method="post">
+
+        <input type="text" name="Pregnancies" placeholder="Pregnancies" required>
+
+        <input type="text" name="Glucose" placeholder="Glucose Level" required>
+
+        <input type="text" name="BloodPressure" placeholder="Blood Pressure" required>
+
+        <input type="text" name="BMI" placeholder="BMI" required>
+
+        <input type="text" name="DiabetesPedigreeFunction" placeholder="Diabetes Pedigree Function" required>
+
+        <input type="text" name="Age" placeholder="Age" required>
+
+        <button type="submit">Predict</button>
+
+    </form>
+
+    <h2>{{ prediction_text }}</h2>
+
+</div>
+
+</body>
+</html>
