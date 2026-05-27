@@ -1,0 +1,95 @@
+# Diabetes Prediction System
+
+##  Overview
+This is a Machine Learning-based web application that predicts whether a person is diabetic or not based on health parameters like glucose, BMI, insulin, blood pressure, age, and more. The project uses multiple ML models to compare performance and improve accuracy for early diabetes detection.
+
+
+
+##  Features
+- Predicts diabetes using medical input features  
+- Web-based UI using Flask  
+- Real-time prediction system  
+- Model comparison for better accuracy  
+- Simple and user-friendly interface  
+
+
+
+##  Machine Learning Models Used
+- Logistic Regression  
+- Decision Tree  
+- K-Nearest Neighbors (KNN)  
+
+
+
+##  Dataset
+- Source: Kaggle  
+- Features used:
+  - Glucose
+  - Blood Pressure
+  - BMI
+  - Insulin
+  - Age
+  - Skin Thickness  
+
+
+
+##  Tech Stack
+- Python  
+- Flask  
+- Scikit-learn  
+- Pandas & NumPy  
+- HTML, CSS  
+
+
+
+##  Project Structure
+Diabetes-Detection-Website/
+│
+├── app.py
+├── diabetes_model.pkl
+├── requirements.txt
+├── README.md
+│
+├── static/
+│   └── style.css
+│
+├── templates/
+│   └── index.html
+
+
+
+## Setup Instructions
+
+### 1. Clone the repository
+git clone https://github.com/your-username/Diabetes-Detection-Website.git
+
+### 2. Move into project folder
+cd Diabetes-Detection-Website
+
+### 3. Install dependencies
+pip install -r requirements.txt
+
+### 4. Run the application
+python app.py
+
+
+
+## How It Works
+1. User enters medical details  
+2. Data is processed by ML model  
+3. Model predicts diabetes risk  
+4. Result is shown on web page  
+
+
+
+## Future Improvements
+- Add deep learning models  
+- Improve UI design  
+- Deploy on cloud (Render/AWS)  
+- Add user history tracking  
+
+
+## Author
+Vaishnavi Singh  
+
+
